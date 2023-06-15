@@ -39,7 +39,7 @@ export class AppComponent {
     )
   }
   obtenerLocalizacion(){
-    this.httpClient.get<Localizacion>("https://ipinfo.io/188.85.194.218/geo").subscribe(
+    this.httpClient.get<Localizacion>("http://ipwho.is/" +this.ipDir.ip).subscribe(
       {
         next: (datos: Localizacion) => {
           this.loc = datos;
