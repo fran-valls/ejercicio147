@@ -1,3 +1,3 @@
-export interface direccionIp {
+export interface DireccionIp {
     ip: string;
 }
